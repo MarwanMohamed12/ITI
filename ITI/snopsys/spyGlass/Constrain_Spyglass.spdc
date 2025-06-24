@@ -1,0 +1,20 @@
+# =========== Spyglass_Design_Constrain ============ # 
+
+# ----------- Define_Current_design ----------- #
+current_design CDC_Module
+
+# ----------- Define_First-Clock ----------- # 
+clock -name clkA -domain clkA -edge {"0" "5"} -period 10
+
+# generated_clock -name clk2o -source clkin
+
+# ----------- Define_Second-Clock ----------- # 
+clock -name clkB -domain clkB -edge {"0" "6"} -period 12
+
+reset -name rstA -value 1
+reset -name rstB -value 1
+
+input -name Data_in1 -clock clkA
+
+output -name Data_out1 -clock clkB
+

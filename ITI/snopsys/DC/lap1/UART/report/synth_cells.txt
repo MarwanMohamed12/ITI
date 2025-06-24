@@ -1,0 +1,26 @@
+ 
+****************************************
+Report : cell
+Design : UART_TX_TOP
+Version: U-2022.12-SP7
+Date   : Mon Jul 29 07:54:02 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U0                        Serializer                      130.375875
+                                                                    h, n
+U1                        Parity_Calc                     118.431105
+                                                                    h, n
+U2                        UART_FSM                        74.972480 h, n
+U3                        UART_MUX                        15.502784 h, n
+--------------------------------------------------------------------------------
+Total 4 cells                                             339.282244
+1

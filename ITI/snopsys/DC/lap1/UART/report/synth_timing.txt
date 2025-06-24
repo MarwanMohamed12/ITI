@@ -1,0 +1,393 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : UART_TX_TOP
+Version: U-2022.12-SP7
+Date   : Mon Jul 29 07:54:02 2024
+****************************************
+
+Operating Conditions: tt1p05v125c   Library: saed32rvt_tt1p05v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Data_Valid (input port clocked by CLK)
+  Endpoint: U0/Valid_Data_reg[6]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_TX_TOP        8000                  saed32rvt_tt1p05v125c
+  Serializer         ForQA                 saed32rvt_tt1p05v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  Data_Valid (in)                                         0.00       2.00 f
+  U0/Data_Valid (Serializer)                              0.00       2.00 f
+  U0/U5/Y (INVX1_RVT)                                     0.07       2.07 r
+  U0/U15/Y (NAND2X0_RVT)                                  0.05       2.11 f
+  U0/U4/Y (INVX1_RVT)                                     0.06       2.17 r
+  U0/U8/Y (AO222X1_RVT)                                   0.09       2.27 r
+  U0/Valid_Data_reg[6]/D (DFFARX1_RVT)                    0.01       2.28 r
+  data arrival time                                                  2.28
+
+  clock CLK (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.35       2.65
+  U0/Valid_Data_reg[6]/CLK (DFFARX1_RVT)                  0.00       2.65 r
+  library setup time                                     -0.04       2.61
+  data required time                                                 2.61
+  --------------------------------------------------------------------------
+  data required time                                                 2.61
+  data arrival time                                                 -2.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.33
+
+
+  Startpoint: Data_Valid (input port clocked by CLK)
+  Endpoint: U0/Valid_Data_reg[5]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_TX_TOP        8000                  saed32rvt_tt1p05v125c
+  Serializer         ForQA                 saed32rvt_tt1p05v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  Data_Valid (in)                                         0.00       2.00 f
+  U0/Data_Valid (Serializer)                              0.00       2.00 f
+  U0/U5/Y (INVX1_RVT)                                     0.07       2.07 r
+  U0/U15/Y (NAND2X0_RVT)                                  0.05       2.11 f
+  U0/U4/Y (INVX1_RVT)                                     0.06       2.17 r
+  U0/U9/Y (AO222X1_RVT)                                   0.09       2.27 r
+  U0/Valid_Data_reg[5]/D (DFFARX1_RVT)                    0.01       2.28 r
+  data arrival time                                                  2.28
+
+  clock CLK (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.35       2.65
+  U0/Valid_Data_reg[5]/CLK (DFFARX1_RVT)                  0.00       2.65 r
+  library setup time                                     -0.04       2.61
+  data required time                                                 2.61
+  --------------------------------------------------------------------------
+  data required time                                                 2.61
+  data arrival time                                                 -2.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.33
+
+
+  Startpoint: Data_Valid (input port clocked by CLK)
+  Endpoint: U0/Valid_Data_reg[4]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_TX_TOP        8000                  saed32rvt_tt1p05v125c
+  Serializer         ForQA                 saed32rvt_tt1p05v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  Data_Valid (in)                                         0.00       2.00 f
+  U0/Data_Valid (Serializer)                              0.00       2.00 f
+  U0/U5/Y (INVX1_RVT)                                     0.07       2.07 r
+  U0/U15/Y (NAND2X0_RVT)                                  0.05       2.11 f
+  U0/U4/Y (INVX1_RVT)                                     0.06       2.17 r
+  U0/U10/Y (AO222X1_RVT)                                  0.09       2.27 r
+  U0/Valid_Data_reg[4]/D (DFFARX1_RVT)                    0.01       2.28 r
+  data arrival time                                                  2.28
+
+  clock CLK (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.35       2.65
+  U0/Valid_Data_reg[4]/CLK (DFFARX1_RVT)                  0.00       2.65 r
+  library setup time                                     -0.04       2.61
+  data required time                                                 2.61
+  --------------------------------------------------------------------------
+  data required time                                                 2.61
+  data arrival time                                                 -2.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.33
+
+
+  Startpoint: Data_Valid (input port clocked by CLK)
+  Endpoint: U0/Valid_Data_reg[3]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_TX_TOP        8000                  saed32rvt_tt1p05v125c
+  Serializer         ForQA                 saed32rvt_tt1p05v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  Data_Valid (in)                                         0.00       2.00 f
+  U0/Data_Valid (Serializer)                              0.00       2.00 f
+  U0/U5/Y (INVX1_RVT)                                     0.07       2.07 r
+  U0/U15/Y (NAND2X0_RVT)                                  0.05       2.11 f
+  U0/U4/Y (INVX1_RVT)                                     0.06       2.17 r
+  U0/U11/Y (AO222X1_RVT)                                  0.09       2.27 r
+  U0/Valid_Data_reg[3]/D (DFFARX1_RVT)                    0.01       2.28 r
+  data arrival time                                                  2.28
+
+  clock CLK (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.35       2.65
+  U0/Valid_Data_reg[3]/CLK (DFFARX1_RVT)                  0.00       2.65 r
+  library setup time                                     -0.04       2.61
+  data required time                                                 2.61
+  --------------------------------------------------------------------------
+  data required time                                                 2.61
+  data arrival time                                                 -2.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.33
+
+
+  Startpoint: Data_Valid (input port clocked by CLK)
+  Endpoint: U0/Valid_Data_reg[2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_TX_TOP        8000                  saed32rvt_tt1p05v125c
+  Serializer         ForQA                 saed32rvt_tt1p05v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  Data_Valid (in)                                         0.00       2.00 f
+  U0/Data_Valid (Serializer)                              0.00       2.00 f
+  U0/U5/Y (INVX1_RVT)                                     0.07       2.07 r
+  U0/U15/Y (NAND2X0_RVT)                                  0.05       2.11 f
+  U0/U4/Y (INVX1_RVT)                                     0.06       2.17 r
+  U0/U12/Y (AO222X1_RVT)                                  0.09       2.27 r
+  U0/Valid_Data_reg[2]/D (DFFARX1_RVT)                    0.01       2.28 r
+  data arrival time                                                  2.28
+
+  clock CLK (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.35       2.65
+  U0/Valid_Data_reg[2]/CLK (DFFARX1_RVT)                  0.00       2.65 r
+  library setup time                                     -0.04       2.61
+  data required time                                                 2.61
+  --------------------------------------------------------------------------
+  data required time                                                 2.61
+  data arrival time                                                 -2.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.33
+
+
+  Startpoint: Data_Valid (input port clocked by CLK)
+  Endpoint: U0/Valid_Data_reg[1]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_TX_TOP        8000                  saed32rvt_tt1p05v125c
+  Serializer         ForQA                 saed32rvt_tt1p05v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  Data_Valid (in)                                         0.00       2.00 f
+  U0/Data_Valid (Serializer)                              0.00       2.00 f
+  U0/U5/Y (INVX1_RVT)                                     0.07       2.07 r
+  U0/U15/Y (NAND2X0_RVT)                                  0.05       2.11 f
+  U0/U4/Y (INVX1_RVT)                                     0.06       2.17 r
+  U0/U13/Y (AO222X1_RVT)                                  0.09       2.27 r
+  U0/Valid_Data_reg[1]/D (DFFARX1_RVT)                    0.01       2.28 r
+  data arrival time                                                  2.28
+
+  clock CLK (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.35       2.65
+  U0/Valid_Data_reg[1]/CLK (DFFARX1_RVT)                  0.00       2.65 r
+  library setup time                                     -0.04       2.61
+  data required time                                                 2.61
+  --------------------------------------------------------------------------
+  data required time                                                 2.61
+  data arrival time                                                 -2.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.33
+
+
+  Startpoint: Data_Valid (input port clocked by CLK)
+  Endpoint: U0/Valid_Data_reg[0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_TX_TOP        8000                  saed32rvt_tt1p05v125c
+  Serializer         ForQA                 saed32rvt_tt1p05v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  Data_Valid (in)                                         0.00       2.00 f
+  U0/Data_Valid (Serializer)                              0.00       2.00 f
+  U0/U5/Y (INVX1_RVT)                                     0.07       2.07 r
+  U0/U15/Y (NAND2X0_RVT)                                  0.05       2.11 f
+  U0/U4/Y (INVX1_RVT)                                     0.06       2.17 r
+  U0/U6/Y (AO222X1_RVT)                                   0.09       2.27 r
+  U0/Valid_Data_reg[0]/D (DFFARX1_RVT)                    0.01       2.28 r
+  data arrival time                                                  2.28
+
+  clock CLK (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.35       2.65
+  U0/Valid_Data_reg[0]/CLK (DFFARX1_RVT)                  0.00       2.65 r
+  library setup time                                     -0.04       2.61
+  data required time                                                 2.61
+  --------------------------------------------------------------------------
+  data required time                                                 2.61
+  data arrival time                                                 -2.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.33
+
+
+  Startpoint: Data_Valid (input port clocked by CLK)
+  Endpoint: U0/Valid_Data_reg[7]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_TX_TOP        8000                  saed32rvt_tt1p05v125c
+  Serializer         ForQA                 saed32rvt_tt1p05v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  Data_Valid (in)                                         0.00       2.00 r
+  U0/Data_Valid (Serializer)                              0.00       2.00 r
+  U0/U5/Y (INVX1_RVT)                                     0.07       2.07 f
+  U0/U15/Y (NAND2X0_RVT)                                  0.04       2.11 r
+  U0/U14/Y (AND2X1_RVT)                                   0.07       2.19 r
+  U0/U7/Y (AO22X1_RVT)                                    0.08       2.26 r
+  U0/Valid_Data_reg[7]/D (DFFARX1_RVT)                    0.01       2.28 r
+  data arrival time                                                  2.28
+
+  clock CLK (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.35       2.65
+  U0/Valid_Data_reg[7]/CLK (DFFARX1_RVT)                  0.00       2.65 r
+  library setup time                                     -0.04       2.61
+  data required time                                                 2.61
+  --------------------------------------------------------------------------
+  data required time                                                 2.61
+  data arrival time                                                 -2.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.34
+
+
+  Startpoint: Par_Type (input port clocked by CLK)
+  Endpoint: U1/Parity_reg
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_TX_TOP        8000                  saed32rvt_tt1p05v125c
+  Parity_Calc        ForQA                 saed32rvt_tt1p05v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 f
+  Par_Type (in)                            0.00       2.00 f
+  U1/Par_Type (Parity_Calc)                0.00       2.00 f
+  U1/U3/Y (XNOR3X1_RVT)                    0.13       2.13 r
+  U1/U2/Y (AO22X1_RVT)                     0.06       2.19 r
+  U1/Parity_reg/D (DFFARX1_RVT)            0.01       2.20 r
+  data arrival time                                   2.20
+
+  clock CLK (rise edge)                    3.00       3.00
+  clock network delay (ideal)              0.00       3.00
+  clock uncertainty                       -0.35       2.65
+  U1/Parity_reg/CLK (DFFARX1_RVT)          0.00       2.65 r
+  library setup time                      -0.04       2.61
+  data required time                                  2.61
+  -----------------------------------------------------------
+  data required time                                  2.61
+  data arrival time                                  -2.20
+  -----------------------------------------------------------
+  slack (MET)                                         0.41
+
+
+  Startpoint: Par_En (input port clocked by CLK)
+  Endpoint: U2/Current_State_reg[1]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_TX_TOP        8000                  saed32rvt_tt1p05v125c
+  UART_FSM           ForQA                 saed32rvt_tt1p05v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  Par_En (in)                                             0.00       2.00 r
+  U2/Par_En (UART_FSM)                                    0.00       2.00 r
+  U2/U6/Y (INVX1_RVT)                                     0.03       2.03 f
+  U2/U10/Y (NAND2X0_RVT)                                  0.04       2.07 r
+  U2/U9/Y (AND2X1_RVT)                                    0.05       2.12 r
+  U2/U8/Y (AO22X1_RVT)                                    0.05       2.17 r
+  U2/Current_State_reg[1]/D (DFFARX1_RVT)                 0.01       2.18 r
+  data arrival time                                                  2.18
+
+  clock CLK (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.35       2.65
+  U2/Current_State_reg[1]/CLK (DFFARX1_RVT)               0.00       2.65 r
+  library setup time                                     -0.04       2.61
+  data required time                                                 2.61
+  --------------------------------------------------------------------------
+  data required time                                                 2.61
+  data arrival time                                                 -2.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+1
