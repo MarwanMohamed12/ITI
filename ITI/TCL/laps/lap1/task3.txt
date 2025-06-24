@@ -1,0 +1,17 @@
+set status "abcdjf"
+
+for {set x 0} {$x<9} {incr x} {
+if {[string index $status $x]=="a"} {
+  puts "employe is Excellent"
+} elseif {[string index $status $x]=="b"} {
+   puts "employe is Very Good"
+} elseif {[string index $status $x]=="c"} {
+   puts "employe is Good"
+} elseif {[string index $status $x]=="d"} {
+   puts "employe is Up Normal"
+} elseif {[string index $status $x]=="j"} {
+   puts "employe is Normal"
+} elseif {[string index $status $x]=="f"} {
+   puts "employe is Bad"
+}
+}

@@ -1,0 +1,4 @@
+set str "DIC Intake 43"
+puts "deal as string index is [string index $str "1"]"
+set list [split "DIC Intake 43"]
+puts [lindex $list 1]

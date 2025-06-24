@@ -1,0 +1,12 @@
+#First:Company-X
+Employee:	Name:Ahmed          Grade:A+             School:Inter-School   University:AUC  	         Current_Salary:1500  
+       
+#SecondCompany-Y 
+Employee:	Grade:B              Name:Haitm          University:Assuit         School:Nat-School     Current_Salary:2000           Previous_Salary:1500
+
+#Third:Company-U
+Employee:	School:Nat-School     Grade:B              Name:Mohamed        University:BUE  	         Current_Salary:2000           Previous_Salary:3000
+
+
+#Fourth:Company-Z 
+Employee:	School:Acade-School   Grade:C              Name:Moumen         University:Cairo          Current_Salary:1000           Certification:ITI9-Months

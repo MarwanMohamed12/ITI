@@ -1,0 +1,7 @@
+puts [string compare "Samy" "Sayed"]
+
+if {[string match "Samy" "Sayed"] } {
+  puts " match"
+} else {
+   puts "not match"
+}

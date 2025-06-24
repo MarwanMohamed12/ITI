@@ -1,0 +1,11 @@
+set status "abcdef"
+for {set x 0} {$x<9} {incr x} {
+switch [string index $status $x] {
+  "a" {puts "employe is Excellent"}
+  "b" {puts "employe is Very Good"}
+  "c" {puts "employe is Good"}
+  "d" {puts "employe is Up Normal"}
+  "e" {puts "employe is Normal"}
+  "f" {puts "employe is Bad"}
+}
+}

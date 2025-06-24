@@ -1,0 +1,9 @@
+set num1 [expr rand()]
+set num2 [expr rand()]
+puts "number1=$num1 and number2 =$num2"
+
+if {$num1==$num2} {
+  puts "two number is equal"
+} else {
+   puts "two number is not equal"
+}

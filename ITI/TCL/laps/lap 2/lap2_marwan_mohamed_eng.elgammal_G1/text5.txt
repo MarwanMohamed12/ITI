@@ -1,0 +1,13 @@
+set listing [list 1 2 3 4 5]
+
+proc inserting {listing index value} {
+puts [linsert $listing $index $value]
+}
+
+proc replaceing {listing index value} {
+puts [lreplace $listing $index $index $value ]
+}
+
+inserting $listing 2 10
+replaceing $listing 3 5
+puts $listing

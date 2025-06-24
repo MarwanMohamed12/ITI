@@ -1,0 +1,8 @@
+proc helper {a {b 0} } {
+  puts [expr $a +$b]
+  puts [expr $a -$b]
+  puts [expr $a *$b]
+  return [expr $a +$b]
+}
+
+puts [helper 1 3]

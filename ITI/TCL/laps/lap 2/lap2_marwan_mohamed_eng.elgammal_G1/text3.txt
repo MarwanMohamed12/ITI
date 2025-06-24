@@ -1,0 +1,9 @@
+set str "DIC Intake 43"
+set ranging [string range $str 0 1]
+puts "$ranging"
+puts [string length $ranging ]
+
+set list [split $str]
+set x [lrange $list 0 1]
+puts $x
+puts [llength $x ]

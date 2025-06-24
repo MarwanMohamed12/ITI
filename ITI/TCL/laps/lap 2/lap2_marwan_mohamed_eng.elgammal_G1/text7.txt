@@ -1,0 +1,13 @@
+#first way 
+set ist [list 0 0 1 1 [list 2 2 [list 3 3]]] 
+puts "$ist"
+#second way 
+##########################################
+
+set listing {0 0 1 1 2 2 3 3}
+set empty {}
+set length [llength $listing]
+    for {set i 0} {$i< $length} {incr i 2} {
+    lappend empty [list [lindex $listing $i] [lindex $listing [expr $i+1 ] ]  ]
+    }
+puts $empty

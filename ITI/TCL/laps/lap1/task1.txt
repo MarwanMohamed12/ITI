@@ -1,0 +1,10 @@
+set x 5.5 
+set y 6
+puts " addition [expr $x + $y]"
+puts " subtraction [expr $x - $y]"
+puts " multiplication [expr $x * $y]"
+puts " division [expr $x / $y]"
+puts " exponentiation [expr $x ** $y]"
+puts " remainder [expr $x % $y]"
+puts " shift right [expr $x >> $y]"
+puts " shift left [expr $x >> $y]""

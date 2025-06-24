@@ -1,0 +1,16 @@
+set str1 "#"
+set str2 "#"
+set value1 16
+set value2 25
+set value3 36
+set value5 45
+
+for {set x 0} {$x<35} {incr x} {
+  append str1 $str2
+}
+puts "$str1"
+puts "value\tsqrt\tsquare\tcubic"
+puts "$value1\t[expr $value1**.5]\t[expr $value1**2]\t[expr $value1**3]"
+puts "$value2\t[expr $value2**.5]\t[expr $value2**2]\t[expr $value2**3]"
+puts "$value3\t[expr $value3**.5]\t[expr $value3**2]\t[expr $value3**3]"
+puts "$value4\t[expr $value4**.5]\t[expr $value4**2]\t[expr $value4**3]"

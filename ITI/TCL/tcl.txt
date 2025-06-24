@@ -1,0 +1,237 @@
+proc sum { a b c } {
+
+return [expr $a * $b + $c ] }
+
+puts [ sum 1 2 3 ]
+
+proc print { } {
+puts "inside print " 
+puts [ sum 1 2 3 ]
+}
+
+----------------------
+
+
+
+proc my_function {my_list} {
+    foreach item $my_list {
+        incr x $item
+	puts " $item  $x "
+    }
+}
+
+set numbers {1 2 3 4 5}
+my_function $numbers
+
+set x 5
+
+proc vardefult { value default } {
+upvar $value v 
+if { ![info exists v]} {
+set v $default }
+}
+
+vardefult x 3
+puts $x
+
+vardefult z 3
+puts $z
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ of the following code?
+set a  2
+
+set b  4
+
+proc test { a c } {
+
+    set y $c // y=4
+
+    incr a   // a 3
+
+    incr c   // 5
+
+   return $c 
+
+}
+
+set c [ test $a $b ]
+
+puts  “  value of a is $a and value of b is $b”  2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+what is the output of the following code?
+set value 50
+
+  proc inner {} {
+
+        global value
+
+        puts "Inner: $value"
+
+    }
+
+ 
+
+proc outer {} {
+
+    set value 100
+
+    inner
+
+    puts "Outer: $value"
+
+}
+
+outer
+
+puts "Global: $value
+
+inner 50
+outer 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+set num 100
+
+proc increment {num} {
+
+    global num
+
+    set num [expr {$num + 1}]
+
+    return $num
+
+}
+
+set newNum [increment 10]
+
+puts "newNum: $newNum, Global num: $num"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hat will be the output of the following Tcl script that uses upvar to simulate passing by reference?
+proc modifyRef {varName} {
+
+    upvar $varName ref
+
+    set ref [expr {$ref + 10}]
+
+}
+
+set num 5
+
+modifyRef num
+
+puts "num: $num"
+
+proc myfunc { a b c} { …………}
+
+
+set st "shmed is here"
+puts "[string trim $st]"
+puts "[string length $st]"
+puts "[string length st]"
+puts "[string index $st 4]"
+puts "[string index $st end]"
+puts "[string first "is" $st]"
+puts "[string first $st "is"]"
+puts "[string range $st 4 end]"
+puts "[string replace $st 5 "said"]"
+
+set st2 "ahmed is here"
+puts "[string compare $st $st2]"
+puts "[string tolower $st]"
+puts "[string toupper $st]"
+
+
+puts "[string wordend $st 1]"
+puts "[string wordstart $st 7]"
+
+set str1 "First seg"
+set str2 "First seg"
+set str3 "first seg"
+set str4 "first se"
+set str5 "irst seg"
+
+if { $str1 == $str2 } { puts "exact match" } else {puts "exact not match"}
+if { $str1 == $str3 } { puts "case  match" } else {puts "case not match"}
+if { $str1 == $str4 } { puts "prefix match" } else {puts "prefix not match"}
+if { $str1 == $str5 } { puts "substring match" } else {puts "substring not match"}
+
+if { [string equal $str1 $str2 ]} { puts "exact match" } else {puts "exact not match"}
+if { [string equal -nocase $str1 $str3 ] } { puts "case  match" } else {puts "case not match"}
+if { [string equal -length 5 $str1 $str4 ] } { puts "prefix match" } else {puts "prefix not match"}
+if { [string equal -length 5 $str1 $str5 ] } { puts "substring match" } else {puts "substring not match"}
